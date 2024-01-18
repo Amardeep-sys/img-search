@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Image Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      id="main"
+      class="w-full bg-zinc-100 dark:bg-zinc-900 min-h-screen py-5 px-0 text-zinc-900 dark:text-zinc-100"
+    >
+      <div id="content" class="w-full flex flex-col py-10 gap-4 items-center">
+        <h1
+          class="text-4xl text-center mt-20 font-bold font-verdana text-fuchsia-600"
+        >
+          Modern Image Search Engine
+        </h1>
+        <form id="form" class="mt-20 pt-7 flex gap-2.5">
+          <input
+            class="border-2 border-fuchsia-600 rounded py-2 px-4 w-96 bg-zinc-50 dark:text-zinc-300 text-zinc-800 focus:outline-fuchsia-600"
+            placeholder="Search imgages..."
+            type="text"
+            id="textToSearch"
+          />
+          <button
+            class="bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-2 px-8 rounded"
+            id="SearchBtn"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+      <div id="images" class="container flex flex-wrap gap-3 mx-auto py-10 border mt-4">
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
